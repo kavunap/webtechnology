@@ -13,6 +13,7 @@ cgi.out("type" => "text/html", "charset" => "UTF-8") {
     <body><b>
       <p>The received string is as follows</p>
       <p>String：#{get}</p></b>
+      <button> <a href='/test' >back</button>
     </body>
   </html>"
 }

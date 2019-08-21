@@ -22,5 +22,6 @@ server.mount('/indicate.cgi', WEBrick::HTTPServlet::CGIHandler, 'indicate.rb')
 
 # Add this line
 server.mount('/goya.cgi', WEBrick::HTTPServlet::CGIHandler, 'goya.rb')
+server.mount('/goya1.cgi', WEBrick::HTTPServlet::CGIHandler, 'goya1.rb')
 
 server.start
