@@ -16,7 +16,7 @@ server = WEBrick::HTTPServer.new({
 
 # Change WEBrick :: HTTPServlet :: FileHandler to WEBrick :: HTTPServlet :: ERBHandler
 # Change 'test.html' to 'test.html.erb'
-server.mount('/test', WEBrick::HTTPServlet::ERBHandler, 'test.html.erb')
+server.mount('/', WEBrick::HTTPServlet::ERBHandler, 'test.html.erb')
 
 server.mount('/indicate.cgi', WEBrick::HTTPServlet::CGIHandler, 'indicate.rb')
 
